@@ -16,7 +16,7 @@
 ---
 ~~~html
 <!-- CSS LocalHost-->
-<script src="../node_modules/bootstrap/dist/css/bootstrap.min.css"></script>
+<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 ~~~
 ---
 
