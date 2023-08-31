@@ -1,12 +1,12 @@
 # Links para FrontEnd
 
-**Link video aula BootStrap 5:** <https://www.youtube.com/playlist?list=PL0YuSuacUEWuJN3qb6NP15bzqd8w_oAj7>
+**Link video aula BootStrap 5:** [Assista aqui](https://www.youtube.com/playlist?list=PL0YuSuacUEWuJN3qb6NP15bzqd8w_oAj7)
 
 ---
 
-## bootstrap: https://getbootstrap.com/
+## BootStrap: https://getbootstrap.com/
 
- ### Esse codigo deve ficar dentro da TAG <!-- <head> -->
+ ### Este código deve ficar dentro da TAG `<!-- <head> -->`
 
  
 ~~~html
@@ -20,7 +20,7 @@
 ~~~
 ---
 
-### Esse codigo devese a ultima linha dentro da TAG <!-- </body> -->
+### Esse codigo devese a ultima linha dentro da TAG `<!-- </body> -->`
 
  ~~~html 
 <!-- JavaScript Bundle with Popper Only-->
@@ -34,12 +34,19 @@
 ---
 
 ## nodejs: https://nodejs.org/pt-br/download
-*(Obs: Marca na instalação do nodejs a opção "Automatically instal the necessary tools.". Logo a pós a instalação, irá abrir na tela o CMD  e devera precionar a tecla "ENTER" duas vezes para continuar com a instalação. Para verificar se foi instalado corretamente executar o CMD com o comado "node --version" logo após ira aparecer a versão do nodejs comfirmando a instalação.)*
+*(Obs: Ao instalar o Node.js, marque a opção "Automatically install the necessary tools". Após a instalação, a janela do CMD será aberta e você deverá pressionar a tecla "ENTER" duas vezes para continuar com o processo de instalação. Para verificar se a instalação foi realizada corretamente, execute o CMD com o comando "node --version". Em seguida, a versão do Node.js será exibida, confirmando a conclusão da instalação.)*
 
 ---
 
 ## VS-CODE: https://code.visualstudio.com/
 
-(Extenções para o vscode:auto rename tag; HTML CSS Suport; IntelliSense for CSS class names in HTML; Live Server; Bootstrap 5 & Font Awesome Snippets; vscode-icons; Sass (.sass only); Live Sass Compiler)
+**Extenções para o vscode:**
+* Auto Rename Tag 
+* HTML CSS Suport IntelliSense for CSS class names in HTML
+* Live Server
+* Bootstrap 5 & Font Awesome Snippets
+* Vscode-icons
+* Sass (.sass only)
+* Live Sass Compiler
 
 
