@@ -1,8 +1,6 @@
 # Links para FrontEnd
 
----
-
-**Link video aula BootStrap 5:** https://www.youtube.com/playlist?list=PL0YuSuacUEWuJN3qb6NP15bzqd8w_oAj7
+**Link video aula BootStrap 5:** <https://www.youtube.com/playlist?list=PL0YuSuacUEWuJN3qb6NP15bzqd8w_oAj7>
 
 ---
 
@@ -11,29 +9,28 @@
  ### Esse codigo deve ficar dentro da TAG <!-- <head> -->
 
  
-'''
-    <!-- CSS only-->
+~~~html
+<!-- CSS only-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-'''
-
- 
-'''
-    <!-- CSS LocalHost-->
+~~~
+---
+~~~html
+<!-- CSS LocalHost-->
 <script src="../node_modules/bootstrap/dist/css/bootstrap.min.css"></script>
-'''
+~~~
 ---
 
 ### Esse codigo devese a ultima linha dentro da TAG <!-- </body> -->
 
- ''' 
-    <!-- JavaScript Bundle with Popper Only-->
+ ~~~html 
+<!-- JavaScript Bundle with Popper Only-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> 
-'''
-
-'''
-    <!-- JavaScript Bundle with Popper LocalHost-->
+~~~
+---
+~~~html
+<!-- JavaScript Bundle with Popper LocalHost-->
 <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-'''
+~~~
 ---
 
 ## nodejs: https://nodejs.org/pt-br/download
