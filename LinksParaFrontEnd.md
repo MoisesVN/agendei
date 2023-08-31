@@ -10,13 +10,16 @@
 
  ### Esse codigo deve ficar dentro da TAG <!-- <head> -->
 
-* '''
-    <!-- CSS only-->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+* 
 '''
-* '''
+    <!-- CSS only-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+'''
+
+* 
+'''
     <!-- CSS LocalHost-->
-	<script src="../node_modules/bootstrap/dist/css/bootstrap.min.css"></script>
+<script src="../node_modules/bootstrap/dist/css/bootstrap.min.css"></script>
 '''
 ---
 
