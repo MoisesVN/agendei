@@ -10,13 +10,13 @@
 
  ### Esse codigo deve ficar dentro da TAG <!-- <head> -->
 
-* 
+ 
 '''
     <!-- CSS only-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 '''
 
-* 
+ 
 '''
     <!-- CSS LocalHost-->
 <script src="../node_modules/bootstrap/dist/css/bootstrap.min.css"></script>
@@ -25,13 +25,14 @@
 
 ### Esse codigo devese a ultima linha dentro da TAG <!-- </body> -->
 
-* ''' 
+ ''' 
     <!-- JavaScript Bundle with Popper Only-->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> 
 '''
-* '''
+
+'''
     <!-- JavaScript Bundle with Popper LocalHost-->
-	<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 '''
 ---
 
