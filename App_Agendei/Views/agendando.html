@@ -5,17 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendei</title>
     <link rel="icon"  href="https://raw.githubusercontent.com/MoisesVN/agendei/main/App_Agendei/Assets/img/favicon_01/favicon.ico">
+    <style>
+    body{
+        background-color: rgb(67, 67, 221);
+    }
+    button{background-color: blue;
+    color: white;
+    border-radius: 10px;
+    border: solid blue;
+    float:right
+}
+table.dois{
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  text-align: start;
+}
+th.dois{
+    text-align: start;
+}
+td.dois{text-align: start;
+width: 100%;
+font-family: Arial, Helvetica, sans-serif;
+}
+    table.um{
+  background-color: darkorange;
+  border: 1px solid darkorange;
+  border-radius: 10px;
+}
+h1{color: white;}
+th.um{background-color: white;
+border-radius: 10px;
+color: black;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+height: 40px;
+width: 300px;
+}
+img{width: 200px;
+height: auto;
+border-radius: 10px;}
+td.um{background-color: blue;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+width: 100px;
+border-radius: 10px;
+color: white;
+text-align: center;}
+    </style>
 </head>
 <body>
     <h1>AGENDEI.COM</h1>
      <!-- imagem, data,local, quantidade de pessoas, pesquisar -->
-    <Table>
-        <tr>
-            <td>Local</td>
-            <td>Data</td>
-            <td>quantidade de pessoas</td>
-            <td>pesquisar</td>
+    <dir><dir><dir><dir><Table class="um">
+        <tr class="um">
+            <th class="um">Local</th>
+            <th class="um">Data</th>
+            <th class="um">Quantidade de Pessoas</th>
+            <td class="um">Pesquisar</td>
         </tr>
-    </Table>
+    </Table></dir></dir></dir></dir>
+    <table class="dois">
+        <tr class="dois">
+            <th class="dois"><img src="https://th.bing.com/th/id/R.baf8c0e88a7eb358f52674564a3aef05?rik=OL8wZkLCD5enHA&riu=http%3a%2f%2fwww.decorfacil.com%2fwp-content%2fuploads%2f2017%2f05%2f20170518piscina-de-vinil-1.jpg&ehk=k1GM%2bSvjiRGXPnH%2bVR%2bfXHbP5HCM6AaZtOAMvUq%2b0kA%3d&risl=&pid=ImgRaw&r=0" alt=""></th>
+            <td class="dois">Nome da piscina:<br><br>Endereço: <br> <br>Nota:  <br> <br> <br><button type="button">Ver Preços</button>  <br></td>
+        </tr>
+    </table>
+    <br>
+    <table class="dois">
+        <tr class="dois">
+            <th class="dois"><img src="https://th.bing.com/th/id/OIP.-MwWXW4lh-kx_bJK2egmvwHaE8?pid=ImgDet&rs=1" alt=""></th>
+            <td class="dois">Nome da piscina:<br><br>Endereço: <br> <br>Nota:  <br> <br> <br><button type="button">Ver Preços</button>  <br></td>
+        </tr>
+    </table>
+    <br>
+    <table class="dois">
+        <tr class="dois">
+            <th class="dois"><img src="https://www.decorfacil.com/wp-content/uploads/2016/11/20161104imagem24.jpg" alt=""></th>
+            <td class="dois">Nome da piscina:<br><br>Endereço: <br> <br>Nota:  <br> <br> <br><button type="button">Ver Preços</button>  <br></td>
+        </tr>
+    </table>
 </body>
 </html>
