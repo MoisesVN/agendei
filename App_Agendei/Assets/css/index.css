@@ -1,0 +1,86 @@
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #5CB9FF;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+/*CABEÇALHO*/
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #f2f2f2;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #025373;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    font-size: 18px;
+    padding: 0 30px;
+}
+
+/*PARTE TEXTUAL OU CONTEÚDO DO SITE*/
+
+section.conteudo{
+    padding: 0 4%;
+}
+
+.conteudo .texto{
+    color: #f2f2f2;
+    font-size: 24px;
+    text-align: justify;
+}
+
+/*RODAPÉ*/
+
+footer{
+    padding: 20px 4%;
+    background-color: #025373;
+    display: flex;
+}
+
+footer a{
+    color: #f2f2f2;
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer a:hover{
+    color: #5CB9FF;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer ul li{
+    display: inline-block;
+    font-size: 16px;
+    padding: 20px;
+}
