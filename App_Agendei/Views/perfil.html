@@ -13,7 +13,7 @@
     <header>
         <div class="interface">
             <div class="logo">
-                <a href="#"> <!--Coloquei um '#' para de deixar em aberto, para o caso de precisar colocar algum link de redirecionamento na imagem da Logo-->
+                <a href="../index.html"> <!--Coloquei um '#' para de deixar em aberto, para o caso de precisar colocar algum link de redirecionamento na imagem da Logo-->
                     <img src="../Assets/img/Logo-Agendei01.jpeg" alt="Logo" height="100" width="100">
                 </a>
             </div> <!--FINAL DA DIV LOGO-->
@@ -28,16 +28,26 @@
             </nav>
         </div> <!--FINAL DA DIV LOGO-->
     </header>
-    <div id="corpo-login">
-        <h2 id="titleLogin">Login</h2>
-        <div class="d-flex justify-content-center">
-            <form class="col-5">
-                <input type="text" class="form-control form-control-lg mb-5"  id="exampleFormControlInput1" placeholder="Login">
-                <input type="password" class="form-control form-control-lg mb-5" id="exampleFormControlInput1"  placeholder="Senha">
-                <div class="d-flex justify-content-center">
-                    <button id="button" type="button" class="btn btn-light btn-lg mb-5 ">Entrar</button>
+    <div id="corpo-login"  class="row  justify-content-center">
+        <div class="row d-flex justify-content-center">
+            <h2 id="titleLogin">Login</h2>
+        </div>
+        <div class=" row d-flex justify-content-center">
+            <form class="col-3  ">
+                <div class="row form-control-lg mb-2 d-flex justify-content-center   ">
+                    <input type="text"  placeholder="Login" id="form">
                 </div>
-                <div id="linkCadastro">
+                <div class=" row form-control-lg mb-3 justify-content-center" >
+                    <input type="password"  placeholder="Senha" id="form">
+                </div>
+                <div class=" row  justify-content-center">
+                    <button id="button" type="button" class="btn btn-light btn-lg mb-5 row">
+                        <div class="row justify-content-center">
+                            <h6>Entrar</h6>
+                        </div>
+                    </button>
+                </div>
+                <div id="linkCadastro" class="row">
                     <a href="">Criar Conta</a>
                 </div>
             </form>
