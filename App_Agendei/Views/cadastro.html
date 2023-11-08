@@ -1,13 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://raw.githubusercontent.com/MoisesVN/agendei/main/App_Agendei/Assets/css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../Assets/css/cadastro.css">    
+    <title>agendei</title>
 </head>
 <body>
-    <h1 class="cor">agendei</h1>
-    <p>cadastro</p>
+    <div class="agendei">
+    <h1 class="txagendei">agendei</h1>
+    </div>
+    <br><br>
+    <center> 
+        <div class="border">
+             
+       <p>cadastre-se</p><br>
+        <form action="/action_page.php">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br>
+            <label for="tx:e-mail">e-mail:</label><br>
+            <input class="e-mail" type="email" id="e-mail" name="e-mail" size="20"><br>
+            <label class="tx:senha" for="pin">senha:</label><br>
+            <input class="senha" type="password" id="pin" name="pin" size="20"><br>
+            <label class="tx:numero" for="tel">telefone:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">comcordo com os termos</label><br><br>
+            <button type="submit" class="btn btn-primary">cadastrar</button>
+            <a href=""></a>
+        </form>
+        
+        </div>
+     </center>
+    
+        
+        
+   
+    
 </body>
 </html>
