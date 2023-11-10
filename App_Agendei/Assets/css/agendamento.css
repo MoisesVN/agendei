@@ -1,3 +1,30 @@
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #f2f2f2;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #025373;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    font-size: 18px;
+    padding: 0 30px;
+}
 
 #BOTAO{background-color:#025373;}
 #imagem{border: none;}
@@ -9,9 +36,9 @@ border-radius: 10px;
 float: right ;}
 select{border: none;
 background: none;}
-img{
-width: 200px;
-height: 150px;
+.img1{
+width: 300px;
+height: 225px;
 border-radius: 10px;}
 .buttonDOIS{ border-radius: 10px;
 background:none;
@@ -25,10 +52,10 @@ h1{color: #F2F2F2;}
 .number{
 border-radius: 10px;
 width: 40px;}
-.container,.row,.col-sm-3
+.container,.row,.col-sm-3,.col-lg-3
    {background-color:white;
     border: 1px solid #025E73;}
-.col-8{text-align: start;}
+.col-sm-8{text-align: start;}
 .col,.row{text-align: center;
 width: auto;
 height: auto;}
