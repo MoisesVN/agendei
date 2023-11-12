@@ -21,11 +21,12 @@ header nav ul{
 }
 
 header nav ul li{
+    float: right ;
     display: inline-block;
     font-size: 18px;
     padding: 0 30px;
 }
-
+#header2{float: right ;}
 #BOTAO{background-color:#025373;}
 #imagem{border: none;}
 h6{color:  white;}
@@ -34,8 +35,8 @@ body{background-color: #94CEF2;}
 color: white;
 border-radius: 10px;
 float: right ;}
-select{border: none;
-background: none;}
+.form-select{border: none;
+background: none; text-align: center;}
 .img1{
 width: 300px;
 height: 225px;
