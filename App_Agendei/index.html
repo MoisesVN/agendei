@@ -12,25 +12,35 @@
 </head>
 
 <body>
-
     <header>
-        <div class="interface">
-            <div class="logo">
-                <a href="#"> <!--Coloquei um '#' para de deixar em aberto, para o caso de precisar colocar algum link de redirecionamento na imagem da Logo-->
-                    <img src="Assets/img/Logo-Agendei01.jpeg" alt="Logo" height="100" width="100" >
-                </a>
-            </div> <!--FINAL DA DIV LOGO-->
-
-            <nav>
-                <ul>
-                    <li><a href="Views/agendando.html">Pesquisar</a></li>
-                    <li><a href="#">Chat</a></li>
-                    <li><a href="Views/login.html">Login</a></li>
-                    <li><a href="Views/perfil.html">Perfil</a></li>
-                </ul>
-            </nav>
-
-        </div> <!--FINAL DA DIV INTERFACE-->
+        <nav class="navbar navbar-expand-lg " id="navbar">
+            <div class="conteiner-fluid" id="conteiner">      
+                <ul class="navbar-nav navbar-brand " > 
+                <a href="./index.html" class="nav-link" class="" id="">
+                    <img  src="./Assets/img/Logo-Agendei01.jpeg" height="100" width="100" alt="" id="logo">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#n_bar"    aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                </a> 
+                <div class="collapse navbar-collapse "  id="n_bar">
+                    <div class="collapse navbar-collapse "  id="n_bar"></div>
+                    <li class="nav-item" >
+                        <a href="./Views/pesquisa.html" class="nav-link">Pesquisar</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a href="" class="nav-link">Chat</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a href="./Views/login.html" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a href="./Views/perfil.html" class="nav-link">Perfil</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <br>
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
