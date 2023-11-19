@@ -18,6 +18,11 @@ body{
     width:  100%;
 }
 
+#button{
+    float: right;
+    margin-top: 4%;
+}
+
 /*RODAPÉ*/
 
 footer{
@@ -36,12 +41,5 @@ footer a:hover{
     color: #5CB9FF;
 }
 
-footer ul{
-    list-style-type: none;
-}
 
-footer ul li{
-    display: inline-block;
-    font-size: 16px;
-    padding: 20px;
-}
+

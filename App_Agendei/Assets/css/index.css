@@ -17,16 +17,11 @@ body{
 
 /*CABEÇALHO*/
 
-header > .interface{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 
 header a{
     color: #f2f2f2;
     text-decoration: none;
-    display: inline-block;
     transition: .2s;
 }
 
@@ -40,8 +35,6 @@ header nav ul{
 }
 
 header nav ul li{
-    display: inline-block;
-    font-size: 18px;
     padding: 0 30px;
 }
 

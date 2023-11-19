@@ -1,38 +1,6 @@
 
-/*CABEÇALHO*/
-
-header > .interface{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header a{
-    color: #f2f2f2;
-    text-decoration: none;
-    display: inline-block;
-    transition: .2s;
-}
-
-header a:hover{
-    color: #025373;
-    transform: scale(1.05);
-}
-
-header nav ul{
-    list-style-type: none;
-}
-
-header nav ul li{
-    display: inline-block;
-    font-size: 18px;
-    padding: 0 30px;
-}
-
-/*-----------------------------------------------------------*/
 
 #corpo-login{
-    margin-top: 8%;
     background-color: white;
     width: 50%;
     margin-left: 25%;
