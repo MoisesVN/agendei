@@ -46,26 +46,27 @@
             <h2 id="titleLogin">Cadastre-se</h2>
         </div>
         <div class=" row  justify-content-center">
-            <form class="col-sm-2, col-md-6">
-                <div class="row form-control-lg  justify-content-center ">
-                    <input type="text"  placeholder="Nome" id="form" class="justify-content-center">
+            <form class="col-sm-2, col-md-6" method="post" action="../Back/PHP/cadastro.php"> <!--precisa cria uma validaçao para esse cadastro, principalmento o de senha. Comentario feito por Moisés-->
+                <div class="row form-control-lg  justify-content-center">
+                    <input type="text" name="nome" placeholder="Nome" id="form" class="justify-content-center" required>
                 </div>
                 <div class="row form-control-lg  justify-content-center ">
-                    <input type="email"  placeholder="Email" id="form" class="justify-content-center">
+                    <input type="email" name="email" placeholder="Email" id="form" class="justify-content-center" required>
                 </div>
                 <div class=" row form-control-lg  justify-content-center"  >
-                    <input type="password"  placeholder="Senha" id="form" class="justify-content-center ">
+                    <input type="password" name="senha" placeholder="Senha" id="form" class="justify-content-center " required>
                 </div>
                 <div class=" row form-control-lg  justify-content-center "  >
-                    <input type="password"  placeholder="Confirme sua Senha" id="form" class="justify-content-center ">
+                    <input type="password"  placeholder="Confirme sua Senha" id="form" class="justify-content-center " required>
                 </div>
                 <div class=" row form-control-lg  justify-content-center mb-3"  >
                 <label for="">Aceitar todos os termos de responsabilidade  <input type="checkbox" id="form" class=" "></label>
                 </div>
                 <div class=" row  justify-content-center">
-                    <button id="button" type="button" class="btn btn-light mb-3 row col-md-2  btn-m" >
+                    <input type="submit" value="Cadastra" id="button" class="btn btn-light mb-3 row col-md-2  btn-m"> <!--Teste para o formulario-->
+                    <!-- <button id="button" type="button" class="btn btn-light mb-3 row col-md-2  btn-m" >
                         Entrar
-                    </button>
+                    </button> -->
                 </div>
                 <div id="linkCadastro" class="row">
                     <p>Já tenho conta <a href="../Views/perfil.html">Entrar</a></p>

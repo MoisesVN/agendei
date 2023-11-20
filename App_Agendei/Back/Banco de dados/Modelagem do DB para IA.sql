@@ -1,0 +1,93 @@
+CREATE TABLE Pessoa (
+  id_Pessoa INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  CPF VARCHAR(11) NOT NULL UNIQUE,
+  Nome VARCHAR(50) NOT NULL,
+  Data_Nasc DATE NOT NULL,
+  Telefone VARCHAR(12) NOT NULL,
+  Email VARCHAR(64) NOT NULL
+);
+
+CREATE TABLE Piscina (
+  id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  Nome VARCHAR(50) NOT NULL,
+  Localizacao VARCHAR(150) NOT NULL,
+  Capacidade INTEGER NOT NULL,
+  Regras VARCHAR(1000) NOT NULL,
+  Valor_Diaria DOUBLE NOT NULL,
+  Fotos_Local BLOB NOT NULL,
+  id_Prestador INTEGER NOT NULL,
+  id_Horario INTEGER NOT NULL,
+  id_Descricao INTEGER NOT NULL,
+  id_FPagamento INTEGER NOT NULL,
+  FOREIGN KEY (id_Prestador) REFERENCES UsuarioPrestador(id_Prestador),
+  FOREIGN KEY (id_Horario) REFERENCES Horario_Funcionamento(id_Horario),
+  FOREIGN KEY (id_Descricao) REFERENCES DescricaoLocal(id_Descricao),
+  FOREIGN KEY (id_FPagamento) REFERENCES FormasPagamento(id_FPagamento)
+);
+
+CREATE TABLE Horario_Funcionamento (
+  id_Horario INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  Hora_Entrada TIME NOT NULL,
+  Hora_Saida TIME NOT NULL,
+  Segunda BOOLEAN NOT NULL DEFAULT false,
+  Terca BOOLEAN NOT NULL DEFAULT false,
+  Quarta BOOLEAN NOT NULL DEFAULT false,
+  Quinta BOOLEAN NOT NULL DEFAULT false,
+  Sexta BOOLEAN NOT NULL DEFAULT false,
+  Sabado BOOLEAN NOT NULL DEFAULT false,
+  Domingo BOOLEAN NOT NULL DEFAULT false,
+  Feriado BOOLEAN NOT NULL DEFAULT false
+);
+
+CREATE TABLE DescricaoLocal (
+  id_Descricao INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  cadeira INTEGER NOT NULL,
+  mesas INTEGER NOT NULL,
+  churrasqueira INTEGER NOT NULL,
+  Fogao INTEGER NOT NULL,
+  banheiro INTEGER NOT NULL,
+  wifi BOOLEAN NOT NULL DEFAULT false
+);
+
+CREATE TABLE UsuarioTomador (
+  id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  login VARCHAR(25) NOT NULL,
+  senha VARCHAR(20) NOT NULL,
+  id_Pessoa INTEGER NOT NULL,
+  FOREIGN KEY (id_Pessoa) REFERENCES Pessoa(id_Pessoa)
+);
+
+CREATE TABLE UsuarioPrestador (
+  id_Prestador INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  login VARCHAR(25) NOT NULL,
+  senha VARCHAR(20) NOT NULL,
+  id_Pessoa INTEGER NOT NULL,
+  id_Piscina INTEGER NOT NULL,
+  FOREIGN KEY (id_Pessoa) REFERENCES Pessoa(id_Pessoa),
+  FOREIGN KEY (id_Piscina) REFERENCES Piscina(id)
+);
+
+CREATE TABLE FormasPagamento (
+  id_FPagamento INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  Especie DOUBLE NOT NULL,
+  PIX DOUBLE NOT NULL,
+  Cartao DOUBLE NOT NULL
+);
+
+CREATE TABLE Avaliacao (
+  id_Avaliacao INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  id_Piscina INTEGER NOT NULL,
+  id_Tomador INTEGER NOT NULL,
+  nota DOUBLE(5,0) NOT NULL,
+  comentario VARCHAR(255) NOT NULL,
+  FOREIGN KEY (id_Piscina) REFERENCES Piscina(id),
+  FOREIGN KEY (id_Tomador) REFERENCES UsuarioTomador(id)
+);
+
+CREATE TABLE ResevarPiscina (
+  id_Resevar INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  id_Piscina INTEGER NOT NULL,
+  id_Tomador INTEGER NOT NULL,
+  FOREIGN KEY (id_Piscina) REFERENCES Piscina(id),
+  FOREIGN KEY (id_Tomador) REFERENCES UsuarioTomador(id)
+);
