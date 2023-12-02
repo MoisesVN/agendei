@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg " id="navbar">
         <div class="conteiner-fluid" id="conteiner">      
             <ul class="navbar-nav navbar-brand " > 
-            <a href="../Views/agendando.html" class="nav-link" class="" id="">
+            <a href="../index.html" class="nav-link" class="" id="">
                 <img  src="../Assets/img/Logo-Agendei01.jpeg" height="100" width="100" alt="" id="logo"> 
                 <button id="menu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="button">
                     <span class="navbar-toggler-icon"></span>
@@ -25,9 +25,9 @@
                 <li class="nav-item" >
                     <a href="../Views/pesquisa.html" class="nav-link">Pesquisar</a>
                 </li>
-                <li class="nav-item" >
+                <!-- <li class="nav-item" >
                     <a href="" class="nav-link">Chat</a>
-                </li>
+                </li> -->
                 <li class="nav-item" >
                     <a href="../Views/login.html" class="nav-link">Login</a>
                 </li>
@@ -87,7 +87,7 @@
           <div class="col-sm-8"><p>Nome da piscina:</p><p>Endereço:</p><p>Nota:</p><br> <br> <br><a href="../Views/pagamento.html"><button class="buttonUM" type="button">agendar</button> </a></div>
         </div>
       </div>
-         <script src="../App_Agendei\Assets\jsApp_Agendei\Assets\js\agendando.js"</script>
+         <script src="../App_Agendei\Assets\jsApp_Agendei\Assets\js\agendando.js"></script>
          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
