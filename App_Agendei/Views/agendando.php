@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if((!isset($_SESSION['login']))){
+    header('location:Views\perfil.html');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -14,25 +23,25 @@
     <nav class="navbar navbar-expand-lg " id="navbar">
         <div class="conteiner-fluid" id="conteiner">      
             <ul class="navbar-nav navbar-brand " > 
-            <a href="../index.html" class="nav-link" class="" id="">
+            <a href="../index.php" class="nav-link" class="" id="">
                 <img  src="../Assets/img/Logo-Agendei01.jpeg" height="100" width="100" alt="" id="logo"> 
                 <button id="menu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="button">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
+                </button>
             </a>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <div class="collapse navbar-collapse "  id="n_bar"></div>
-                <li class="nav-item" >
+                <!-- <li class="nav-item" >
                     <a href="../Views/pesquisa.html" class="nav-link">Pesquisar</a>
                 </li>
-                <!-- <li class="nav-item" >
+                 <li class="nav-item" >
                     <a href="" class="nav-link">Chat</a>
-                </li> -->
-                <li class="nav-item" >
-                    <a href="../Views/login.html" class="nav-link">Login</a>
                 </li>
                 <li class="nav-item" >
-                    <a href="../Views/perfil.html" class="nav-link">Perfil</a>
+                    <a href="../Views/login.html" class="nav-link">Login</a>
+                </li> -->
+                <li class="nav-item" >
+                    <a href="../Back/PHP/logout.php" class="nav-link">Logout</a>
                 </li>
                 </ul>
             </div>

@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if((!isset($_SESSION['login']))){
+    header('location:Views\perfil.html');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -33,7 +42,7 @@
                         <a href="" class="nav-link">Chat</a>
                     </li> -->
                     <li class="nav-item" >
-                        <a href="./Views/perfil.html" class="nav-link">Perfil</a>
+                        <a href="Back/PHP/logout.php" class="nav-link">Logout</a>
                     </li>
                     </ul>
                 </div>
