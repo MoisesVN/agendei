@@ -62,7 +62,6 @@ CREATE TABLE `UsuarioPrestador` (
 	`login` varchar(25) NOT NULL,
 	`senha` varchar(20) NOT NULL,
 	`id_Pessoa` INT NOT NULL,
-	`id_Piscina` INT NOT NULL,
 	PRIMARY KEY (`id_Prestador`)
 );
 
