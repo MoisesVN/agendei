@@ -71,7 +71,7 @@ if((!isset($_SESSION['login']))){
            <b>Quantidade de Pessoas:</b><input class="number" type="number" name="" id="">
           </div>
           <div class="col-sm-3, col-lg-3" id="BOTAO">
-            <a href=""><button class="buttonDOIS" type="button"><h6>Pesquisar</h6></button></a>
+            <a href="../Views/pesquisa.html"><button class="buttonDOIS" type="button"><h6>Pesquisar</h6></button></a>
           </div>
         </div>
       </div>
@@ -108,7 +108,7 @@ if((!isset($_SESSION['login']))){
           <?php 
             echo $row['hFuncionamento'];
           ?>
-           </p> <!-- <a href="../Views/pagamento.html"><button class="buttonUM" type="button">agendar</button> </a> --></div> 
+           </p>  <a href="../Views/pesquisa.html"><button class="buttonUM" type="button">agendar</button> </a> </div> 
         </div>
       </div>
       <br>
