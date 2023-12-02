@@ -77,30 +77,48 @@ if((!isset($_SESSION['login']))){
       </div>
       </form>
       <br>
+      <?php 
+        require '../Back/PHP/connect.php';
+        
+        $sql = "SELECT * FROM piscina";
+        $result = mysqli_query($conn, $sql);
+
+        while($row = mysqli_fetch_assoc($result)){
+      ?>
       <div class="container"id="container">
         <div class="row"id="row">
-          <div class="col" id="imagem"><img class="img1" src="https://th.bing.com/th/id/R.baf8c0e88a7eb358f52674564a3aef05?rik=OL8wZkLCD5enHA&riu=http%3a%2f%2fwww.decorfacil.com%2fwp-content%2fuploads%2f2017%2f05%2f20170518piscina-de-vinil-1.jpg&ehk=k1GM%2bSvjiRGXPnH%2bVR%2bfXHbP5HCM6AaZtOAMvUq%2b0kA%3d&risl=&pid=ImgRaw&r=0" alt=""></div>
-          <div class="col-sm-8"><p>Nome da piscina:</p><p>Endereço:</p><p>Nota:</p> <br> <br> <br> <a href="../Views/pagamento.html"><button class="buttonUM" type="button">agendar</button> </a></div>
+          <div class="col" id="imagem"><img class="img1" src="<?php echo $row['img']; ?>" alt=""></div>
+          <div class="col-sm-8"><p>Nome da piscina:
+            <?php 
+            echo $row['nome'];
+            ?>
+          </p><p>Endereço:
+          <?php 
+            echo $row['endereço'];
+          ?>
+          </p><p>Aluguel(R$):
+          <?php 
+            echo $row['aluguel'];
+          ?>
+          </p><p>Descrição:
+          <?php 
+            echo $row['descricao'];
+          ?>
+          </p><p>Funcionamento:
+          <?php 
+            echo $row['hFuncionamento'];
+          ?>
+          </p> <a href="../Views/pagamento.html"><button class="buttonUM" type="button">agendar</button> </a></div>
         </div>
       </div>
       <br>
-      <div class="container"id="container">
-        <div class="row"id="row">
-          <div class="col"id="imagem"><img class="img1" src="https://www.decorfacil.com/wp-content/uploads/2016/11/20161104imagem24.jpg" alt=""></div>
-          <div class="col-sm-8"><p>Nome da piscina:</p><p>Endereço:</p><p>Nota:</p> <br> <br> <br><a href="../Views/pagamento.html"><button class="buttonUM" type="button">agendar</button> </a></div>
-        </div>
-      </div>
-      <br>
-      <div class="container"id="container">
-        <div class="row" id="row">
-          <div class="col"id="imagem"><img class="img1" src="https://th.bing.com/th/id/OIP.-MwWXW4lh-kx_bJK2egmvwHaE8?pid=ImgDet&rs=1" alt=""></div>
-          <div class="col-sm-8"><p>Nome da piscina:</p><p>Endereço:</p><p>Nota:</p><br> <br> <br><a href="../Views/pagamento.html"><button class="buttonUM" type="button">agendar</button> </a></div>
-        </div>
-      </div>
-         <script src="../Assets/js/agendando.js"></script>
-         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+      <?php 
+        }
+      ?>
+      <script src="../Assets/js/agendando.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
