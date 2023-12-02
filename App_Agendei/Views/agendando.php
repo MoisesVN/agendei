@@ -39,6 +39,7 @@
         </div>
     </nav>
 </header>
+<!-- text -->
     <h1>AGENDEI.COM</h1>
     <div class="container justify-content-center" id="container">
         <div class="row" id="row">
