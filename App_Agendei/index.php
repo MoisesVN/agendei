@@ -26,7 +26,7 @@ if((!isset($_SESSION['login']))){
         <nav class="navbar navbar-expand-lg " id="navbar">
             <div class="conteiner-fluid" id="conteiner">      
                 <ul class="navbar-nav navbar-brand " > 
-                <a href="./index.html" class="nav-link" class="" id="">
+                <a href="./index.php" class="nav-link" class="" id="">
                     <img  src="./Assets/img/Logo-Agendei01.jpeg" height="100" width="100" alt="" id="logo"> 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="button">
                         <span class="navbar-toggler-icon"></span>
