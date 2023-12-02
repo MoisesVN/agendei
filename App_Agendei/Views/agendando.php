@@ -59,7 +59,7 @@ if((!isset($_SESSION['login']))){
               <option value="1">Salgado</option>
               <option value="2">Petrópolis</option>
               <option value="3">Universitário</option>
-              <option value="4">kennedy</option>
+              <option value="4">Kennedy</option>
               <option value="5">Nossa Senhora das Dores</option>
               <option value="6">Nova Caruaru</option>
             </select>
@@ -71,7 +71,7 @@ if((!isset($_SESSION['login']))){
            <b>Quantidade de Pessoas:</b><input class="number" type="number" name="" id="">
           </div>
           <div class="col-sm-3, col-lg-3" id="BOTAO">
-            <a href="../Views/pesquisa.html"><button class="buttonDOIS" type="submit"><h6>Pesquisar</h6></button></a>
+            <a href=""><button class="buttonDOIS" type="button"><h6>Pesquisar</h6></button></a>
           </div>
         </div>
       </div>
@@ -108,7 +108,7 @@ if((!isset($_SESSION['login']))){
           <?php 
             echo $row['hFuncionamento'];
           ?>
-          </p> <a href="../Views/pagamento.html"><button class="buttonUM" type="button">agendar</button> </a></div>
+           </p> <!-- <a href="../Views/pagamento.html"><button class="buttonUM" type="button">agendar</button> </a> --></div> 
         </div>
       </div>
       <br>
